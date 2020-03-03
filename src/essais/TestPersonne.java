@@ -16,6 +16,16 @@ public class TestPersonne {
 		Personne personne3 = new Personne("Dubois", "Pierre", ap1);
 		Personne personne4 = new Personne("Dupont", "Paul", ap2);
 		
+		// Il y a désormais besoin de moins de lignes de code pour instancier une personne
+		
+		String nomPrenom = personne1.afficherNomPrenom();
+		System.out.println(nomPrenom);
+		
+		AdressePostale ap3 = new AdressePostale(8, "rue des Mésanges", 56100, "Lorient");
+		personne3.modifierAdresse(ap3);
+		System.out.println(personne3.retournerAdresse());
+		
+		
 		/*
 		personne1.nom = "Dubois";
 		personne1.prenom = "Pierre";
