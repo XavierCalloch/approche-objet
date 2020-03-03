@@ -16,3 +16,5 @@ public class Personne {
 		this.adressePostale = adressePostale;
 	}
 }
+
+// Il y a désormais besoin de moins de lignes de code pour instancier une personne
