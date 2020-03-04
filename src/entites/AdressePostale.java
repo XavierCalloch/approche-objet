@@ -6,6 +6,12 @@ public class AdressePostale {
 	public int codePostal;
 	public String ville;
 	
+	/**
+	 * @param numeroRue
+	 * @param libelleRue
+	 * @param codePostal
+	 * @param ville
+	 */
 	public AdressePostale(int numeroRue, String libelleRue, int codePostal, String ville) {
 		this.numeroRue = numeroRue;
 		this.libelleRue = libelleRue;

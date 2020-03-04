@@ -23,7 +23,13 @@ public class TestPersonne {
 		
 		AdressePostale ap3 = new AdressePostale(8, "rue des Mésanges", 56100, "Lorient");
 		personne3.modifierAdresse(ap3);
+		// ou personne3.modifierAdresse(AdressePostale(9, "rue des Mésanges", 56100, "Lorient"))
 		System.out.println(personne3.retournerAdresse());
+		
+		
+		// Correction
+		AdressePostale adr1 = personne3.retournerAdresse();
+		System.out.println(adr1); // Sortie : Java n'est pas en mesure d'afficher une variable que l'on a créée (retourne l'adresse mémoire ?)
 		
 		
 		/*

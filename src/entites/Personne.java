@@ -1,5 +1,12 @@
 package entites;
 
+/**
+ * 
+ * Représente le concept de Personne
+ * 
+ * @author xavie
+ *
+ */
 public class Personne {
 	public String nom;
 	public String prenom;
@@ -10,6 +17,11 @@ public class Personne {
 		this.prenom = prenom;
 	}
 	
+	/**
+	 * @param nom				nom de la personne
+	 * @param prenom			prenom de la personne
+	 * @param adressePostale	adresse de la personne
+	 */
 	public Personne(String nom, String prenom, AdressePostale adressePostale) {
 		this.nom = nom;
 		this.prenom = prenom;
@@ -22,7 +34,7 @@ public class Personne {
 	}
 	
 	// Modifie le nom
-	public void modifierNom(String nom) {
+	public void modifierNom(String nom) { // ou setNom() (mieux)
 		this.nom = nom;
 	}
 	
@@ -37,7 +49,7 @@ public class Personne {
 	}
 	
 	// Retourne le nom
-	public String retournerNom() {
+	public String retournerNom() { // getNom() (mieux)
 		return nom;
 	}
 	
@@ -49,6 +61,57 @@ public class Personne {
 	// Retourne l'adresse
 	public AdressePostale retournerAdresse() {
 		return adressePostale;
+	}
+	
+	// Correction
+	
+	/**
+	 * Affiche l'identité de la personne
+	 */
+	public void afficherIdentite() {
+		System.out.println(prenom + " " + nom.toUpperCase());
+	}
+
+	/**
+	 * @return the nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * @param nom the nom to set
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * @return the prenom
+	 */
+	public String getPrenom() {
+		return prenom;
+	}
+
+	/**
+	 * @param prenom the prenom to set
+	 */
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	/**
+	 * @return the adressePostale
+	 */
+	public AdressePostale getAdressePostale() {
+		return adressePostale;
+	}
+
+	/**
+	 * @param adressePostale the adressePostale to set
+	 */
+	public void setAdressePostale(AdressePostale adressePostale) {
+		this.adressePostale = adressePostale;
 	}
 	
 }

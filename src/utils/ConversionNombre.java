@@ -6,7 +6,7 @@ public class ConversionNombre {
 
 	public static void main(String[] args) {
 		
-		String s = "Il est 6 heures";
+		String s = "10";
 		
 		// Conversion d'une chaîne de caractères en nombre
 		int convertedString = Integer.parseInt(s);
