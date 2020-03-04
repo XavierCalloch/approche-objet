@@ -1,9 +1,24 @@
 package fr.diginamic.banque.entites;
 
+/**
+ * Représente le concept de Compte
+ * 
+ * @author xavie
+ *
+ */
 public class Compte {
+	/** numéro du compte */
 	private String numero;
+	/** solde du compte */
 	private double solde;
 	
+	/**
+	 * 
+	 * Constructeur
+	 * 
+	 * @param numero	numéro de compte
+	 * @param solde		solde du compte
+	 */
 	public Compte(String numero, double solde) {
 		this.numero = numero;
 		this.solde = solde;
@@ -11,8 +26,13 @@ public class Compte {
 	
 	@Override
 	public String toString() {
-		return (numero + "\n" + Double.toString(solde));
+		return("Numéro: " + numero + " - Solde: " + Double.toString(solde));
 	}
+	/*
+	 * Correction:
+	 * return (numero + "\n" + Double.toString(solde));
+	 */
+	
 
 	/**
 	 * @return the numero
