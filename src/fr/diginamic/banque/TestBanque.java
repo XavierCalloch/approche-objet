@@ -6,9 +6,12 @@ public class TestBanque {
 
 	public static void main(String[] args) {
 		
-		Compte compte = new Compte(54763987, 436);
-		System.out.println(compte);
-		// Affichage de l'adresse mémoire du compte
+		Compte cc = new Compte("A124", 100.0);
+		System.out.println(cc);
+		/*
+		 * Affichage de l'adresse mémoire du compte : n'arrive pas à afficher le compte
+		 * (affichage sous forme de chaîne de caractères)
+		 */
 
 	}
 
