@@ -1,7 +1,7 @@
 package fr.diginamic.banque.entites;
 
 /** 
- * Représente le concept de Compte Taux
+ * Représente un compte rémunéré avec taux
  * 
  * @author xavie
  *
@@ -23,7 +23,7 @@ public class CompteTaux extends Compte {
 	
 	@Override
 	public String toString() {
-		String numeroEtSolde = super.toString() + "\n";
+		String numeroEtSolde = super.toString() + "\n"; // String chaine
 		return numeroEtSolde + "Taux de rémunération: " + tauxRemu + " %";
 	}
 
