@@ -22,7 +22,17 @@ public abstract class Operation {
 		this.montant = montant;
 	}
 	
+	/**
+	 * 
+	 * Cette méthode retourne le type de l'opération
+	 * 
+	 * @return String
+	 */
 	public abstract String afficherType();
+	
+	public String toString() {
+		return afficherType() + " - " + date + " " + montant;
+	}
 
 	/** Getter
 	 * @return the date

@@ -20,6 +20,7 @@ public class Debit extends Operation {
 		super(date, montant);
 	}
 	
+	@Override
 	public String afficherType() {
 		return "Débit";
 	}
