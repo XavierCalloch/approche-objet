@@ -8,13 +8,13 @@ import org.apache.commons.io.FileUtils;
 
 public class LectureFichier {
 
-	public static void main(String[] args) { // throws IOException
+	public static void main(String[] args) { // ou rajouter throws IOException
 		
 		try {
 			File file = new File("C:/Users/xavie/Documents/recensement population 2016.csv");
 			List<String> lignes = FileUtils.readLines(file, "UTF-8");
 			
-			for (String ligne: lignes){
+			for (String ligne: lignes) {
 				System.out.println(ligne);
 			}
 			
@@ -23,14 +23,6 @@ public class LectureFichier {
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
-		
-		/*
-		for (int i = 1; lignes.size(); i++) {
-			
-		}
-		
-		String lignes = lignes.get(i);
-		*/
 		
 	}
 

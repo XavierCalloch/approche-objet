@@ -3,6 +3,16 @@
   <groupId>approche-objet</groupId>
   <artifactId>approche-objet</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+	<dependency>
+ 		<groupId>commons-io</groupId>
+ 		<artifactId>commons-io</artifactId>
+ 		<version>2.6</version>
+	</dependency>
+  </dependencies>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
