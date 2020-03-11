@@ -16,7 +16,7 @@ public class Pays {
 	
 	@Override
 	public String toString() {
-		return "Nom: " + getNom() + "Nombre d'habitants: " + getNbHabitants() + "PIB par habitant: " + getPIBParHab();
+		return "Nom: " + getNom() + " - Nombre d'habitants: " + getNbHabitants() + " - PIB par habitant: " + getPIBParHab();
 	}
 
 	/** Getter
