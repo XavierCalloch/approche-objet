@@ -1,13 +1,28 @@
 package sets;
 
-public class Pays {
+/**
+ * 
+ * Représente un pays
+ * 
+ * @author xavie
+ *
+ */
+public class Pays implements Comparable<Pays> {
 	
+	/** nom du pays */
 	private String nom;
 	
+	/** nombre d'habitants du pays */
 	private double nbHabitants; // double ou int ?
 	
+	/** PIB par habitant du pays */
 	private double PIBParHab; // double ou int ?
 	
+	/** Constructeur
+	 * @param nom			nom du pays
+	 * @param nbHabitants	nombre d'habitants du pays
+	 * @param PIBParHab		PIB par habitant du pays
+	 */
 	public Pays(String nom, double nbHabitants, double PIBParHab) {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
@@ -18,6 +33,21 @@ public class Pays {
 	public String toString() {
 		return "Nom: " + getNom() + " - Nombre d'habitants: " + getNbHabitants() + " - PIB par habitant: " + getPIBParHab();
 	}
+	
+	/*
+	@Override
+	public int compareTo(Pays pays2) {
+		int result = this.nom.compareTo(pays2.getNom());
+		return result;
+	}
+	*/
+	
+	// On veut désormais que  le tri se fasse sur le PIB/hab
+	@Override
+	public int compareTo(Pays pays2) {
+		return (int) (getPIBParHab() - pays2.getPIBParHab());
+	}
+
 
 	/** Getter
 	 * @return the nom
