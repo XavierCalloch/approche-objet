@@ -15,11 +15,11 @@ public class TestPays {
 		
 		// On recherche le pays avec le PIB/habitant le plus important
 		Iterator<Pays> iterator = set.iterator();
-		Pays paysMaxPIBParHab = iterator.next(); // inutile
-		double maxPIBParHab = iterator.next().getPIBParHab();
+		Pays paysMaxPIBParHab = iterator.next();
+		//double maxPIBParHab = iterator.next().getPIBParHab(); // inutile
 		while (iterator.hasNext()) {
 			Pays currentMax = iterator.next();
-			if (currentMax.getPIBParHab() > maxPIBParHab) { // ou get à chaque fois
+			if (currentMax.getPIBParHab() > paysMaxPIBParHab.getPIBParHab()) { // ou get à chaque fois
 				paysMaxPIBParHab = currentMax;
 			}
 		}
