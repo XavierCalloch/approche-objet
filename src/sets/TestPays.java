@@ -1,10 +1,11 @@
 package sets;
 
-import sets.Pays;
 import java.util.Set;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
+
+import sets.Pays;
 
 public class TestPays {
 
@@ -61,8 +62,15 @@ public class TestPays {
 		Iterator<Pays> iterator4 = set.iterator();
 		while (iterator4.hasNext()) {
 			Pays myPays = iterator4.next();
-			System.out.println(myPays.toString());
+			System.out.println(myPays);
 		}
+		
+		// On vérifie le fonctionnement de la méthode equals de la classe Pays
+		System.out.println("");
+		Pays pays1 = new Pays("USA", 327.2, 57638d);
+		Pays pays2 = new Pays("USA", 327.2, 57638d);
+		boolean comparaison = pays1.equals(pays2);
+		System.out.println(comparaison);
 
 	}
 
